@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/grad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="30dp"
+        android:text="Enter  student list"
+        android:textColor="#182B3A"
+        android:textSize="34dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:hint="                  FullName"
+        android:textColorHint="#182B3A"
+        android:textColor="#182B3A"
+        android:textSize="14dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/major"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:hint="                       Major"
+        android:textColorHint="#182B3A"
+        android:textColor="#182B3A"
+        android:textSize="14dp"
+        android:layout_below="@+id/name"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:hint="                        age"
+        android:textColorHint="#182B3A"
+        android:textColor="#182B3A"
+        android:textSize="14dp"
+        android:layout_below="@+id/major"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/edit_round"
+        android:backgroundTint="#434343"
+        android:textColor=" #F9FCFF "
+        android:text="New"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@id/age"/>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/edit_round"
+        android:backgroundTint="#434343"
+        android:textColor=" #F9FCFF "
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="View Data"
+        android:layout_below="@id/btnInsert"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/edit_round"
+        android:backgroundTint="#434343"
+        android:textColor=" #F9FCFF "
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Delete Data"
+        android:layout_below="@id/btnView"/>
+</RelativeLayout>
